@@ -68,7 +68,6 @@ class _RegisterState extends State<Register> {
         _currentAddress =
             ' ${place.subLocality} ${place.subAdministrativeArea}';
       });
-      print('====================================$_currentAddress');
     }).catchError((e) {
       debugPrint(e);
     });
