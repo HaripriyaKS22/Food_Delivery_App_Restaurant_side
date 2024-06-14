@@ -120,7 +120,7 @@ Future<void> _initData() async {
     }, body: {
       'token': token,
     });
-        // print("8888888888888888888888888888888888${response.body}");
+        print("8888888888888888888888888888888888${response.body}");
 
 
       if (response.statusCode == 200) {
@@ -302,7 +302,7 @@ Future<void> _initData() async {
             ' ${place.subLocality} ${place.subAdministrativeArea}';
       });
 
-      print('====================================$_currentAddress');
+      // print('====================================$_currentAddress');
     }).catchError((e) {
       debugPrint(e);
     });
