@@ -48,7 +48,7 @@ Future<void> deleteProduct(int pId) async {
 
         },
       );
-      // print("uuuuuuuuuuuuuuuuuuuuuuuuuu ${a.dproduct}$pId/");
+      print("uuuuuuuuuuuuuuuuuuuuuuuuuu ${a.dproduct}$pId/");
       print("Response status code: ${response.statusCode}");
       print("Response body: ${response.body}");
 
@@ -78,7 +78,7 @@ Future<void> deleteProduct(int pId) async {
 
 Future<void> _initData() async {
   userId = await getUserIdFromPrefs();
-  print("--------------------------------------------R$userId");
+  // print("--------------------------------------------R$userId");
   _getCurrentPosition();
   _startTimer();
   fetchCategories();
@@ -120,7 +120,7 @@ Future<void> _initData() async {
     }, body: {
       'token': token,
     });
-        // print("8888888888888888888888888888888888${response.body}");
+        print("8888888888888888888888888888888888${response.body}");
 
 
       if (response.statusCode == 200) {
