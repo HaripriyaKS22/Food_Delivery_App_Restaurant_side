@@ -48,7 +48,7 @@ Future<void> deleteProduct(int pId) async {
 
         },
       );
-      print("uuuuuuuuuuuuuuuuuuuuuuuuuu ${a.dproduct}$pId/");
+      // print("uuuuuuuuuuuuuuuuuuuuuuuuuu ${a.dproduct}$pId/");
       print("Response status code: ${response.statusCode}");
       print("Response body: ${response.body}");
 
