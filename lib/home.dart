@@ -110,7 +110,8 @@ Future<void> _initData() async {
 
 //product
 
-  Future<void> fetchProducts(String? userId) async {
+  Future<void> fetchProducts(String? userId) async 
+  {
 
     final token = await gettokenFromPrefs();
     print("8888888888888888888888888888888888${token}");
@@ -120,7 +121,7 @@ Future<void> _initData() async {
     }, body: {
       'token': token,
     });
-        // print("8888888888888888888888888888888888${response.body}");
+        print("8888888888888888888888888888888888${response.body}");
 
 
       if (response.statusCode == 200) {
