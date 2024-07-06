@@ -114,14 +114,14 @@ Future<void> _initData() async {
   {
 
     final token = await gettokenFromPrefs();
-    // print("8888888888888888888888888888888888${token}");
+    print("8888888888888888888888888888888888${token}");
     try {
      var response = await http.post(Uri.parse(a.productview), headers: {
       'Authorization': '$token',
     }, body: {
       'token': token,
     });
-        print("8888888888888888888888888888888888${response.body}");
+        // print("8888888888888888888888888888888888${response.body}");
 
 
       if (response.statusCode == 200) {
